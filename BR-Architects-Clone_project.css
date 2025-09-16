@@ -1,0 +1,208 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin-top: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 0px;
+}
+
+.nav_bar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: +1;
+  background-color: white;
+  height: 50.4px;
+  font-size: 20px;
+}
+
+.nav_bar_left {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+span {
+  margin-left: 30px;
+}
+
+.nav_bar_right {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  width: 100%;
+}
+
+.bg_img {
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+
+}
+
+.middle_text {
+  text-align: center;
+  position: absolute;
+  top: 390px;
+  left: 500px;
+  right: 500px;
+  vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.middle_text_BR {
+  height: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  opacity: 0.75;
+  padding: 8px;
+  padding: 10px;
+  
+}
+
+.middle_text_Architect {
+  height: 100%;
+  font-size: 40px;
+  color: white;
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.projects_container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.image-preview {
+  display: inline-block;
+  width: 368.388px;
+  height: 245.337px;
+  position: relative;
+}
+
+.text_in_img {
+  position: absolute;
+  top: 0px;
+  margin: 0px;
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+
+.headings  {
+  font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+/* about */
+.about_img_container{
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 8px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.teams_img {
+  width: 368.388px;
+  display: inline-block;
+}
+
+.team_mem_name {
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.team_mem_position {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.contact_button {
+  background-color: rgb(192, 189, 189);
+  width: 100%;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 10px;
+  border: 0px;
+  cursor: pointer;
+}
+
+/* contact */
+.contact_form_container {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.text_input {
+  width: 1475px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.submit_button {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  width: 1437px;
+  text-align: center;
+}
+
+.w3_school_link {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,65 @@
+Combinators:
+------------
+4 types of selectors
+1. Child selector (>)
+2. Descendent selector (space)
+3. Adjacent sibling selector (+)
+4. General sibling selector (~)
+
+flex - properties
+-----------------
+x-axis values
+justify-content: space-between;
+                 space-around;
+                 space-evenly;
+y-axis values
+align-items: start;
+             center;
+             end;   
+
+flex-direction: row-reverse;
+                row-column;
+                row;
+                column;
+
+flex-wrap: wrap;
+           wrap-reverse;
+
+gap: px;
+
+align-content: start;
+               center;
+               end;
+               flex-start;
+               flex-end;
+               space-around;
+               space-between;
+               space-evenly;
+
+child properties
+----------------
+flex-shrink: 1;
+flex-grow: 1;
+flex-basis: 0%;
+order: +1 or -1;
+
+Units in CSS
+------------
+Units are to specify the size of the container
+There are 2 types:
+
+1) Absolute Units
+    px, in, cm, mm --> FIxed Units
+
+2) Relative Units
+    %
+    vh --> viewport-height
+    vw --> viewport-width
+    em --> element-size
+    rem --> root-element-size
+    calc()-function
+
+    default font size: 16px in html
+
+
+    

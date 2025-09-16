@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+</head>
+<body>
+  <center>
+    <h1>John Doe's Web Portfolio</h1>
+    <p>Showcasing HTML Skills using Tables</p>
+    <nav>
+      <a href="#About">About</a> |
+      <a href="#Skills">Skills</a> |
+      <a href="#Projects">Projects</a> |
+      <a href="#Contact">Contact</a>
+    </nav>
+  </center>
+  <hr>
+  <table border="1" cellspacing="0" cellpadding="10" width="100%" align="center">
+    <tr>
+      <td colspan="2">
+        <table width="100%">
+          <tr>
+            <td>
+              <h2 id="About">About Me</h2>
+              <p>Hello! I'm John Doe, a passionate web developer. I love building semantic, accessible, and responsive websites using core web technologies.</p>
+              <p>I specialize in front-end development, especially HTML, CSS, and JavaScript</p>
+            </td>
+            <td align="right"><img src="./IMAGES/Profile_pic.jpg" alt="John Doe" width="100"></td>
+          </tr>
+        </table>
+        
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h2 id="Skills">Skills</h2>
+        <ul>
+          <li>HTML5 / CSS</li>
+          <li>JavaScript</li>
+          <li>Responsive Designs</li>
+          <li>Git & GitHub</li>
+        </ul>
+        <h2>Skill Levels</h2>
+        <table border="1">
+          <tr>
+            <td><b>Skill</b></td>
+            <td><b>Level</b></td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Expert</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <h2 id="Projects">Projects</h2>
+        <ol>
+          <li><b>Portfolio Website</b> - My personal portfolio built using pure HTML and CSS.</li>
+          <li><b>Todo App</b> - Task management tool with vanilla JavaScript.</li>
+          <li><b>Weather App</b> - A real-time weather dashboard using APIs.</li>
+        </ol>
+        <h2>Screenshot</h2>
+        <img src="./IMAGES/Portfolio ex.png" alt="Project Preview" width="200">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h2 id="Contact">Contact Me</h2>
+        <fieldset>
+          <legend>Contact Form</legend>
+          <form action="./Application.html">
+            <table>
+              <tr>
+                <td><label for="name">Full Name: </label></td>
+                <td><input type="text" name="name" id="name" required></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" id="email" required></td>
+              </tr>
+              <tr>
+                <td><label for="gender">Gender: </label></td>
+                <td>
+                  <input type="radio" name="gender" id="male"> 
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female">
+                  <label for="female">Female</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="">Service Interested: </label></td>
+                <td>
+                  <input type="checkbox" name="webdesign" id="webdesign">
+                  <label for="webdesign">Web Design</label> <br>
+                  <input type="checkbox" name="SEO" id="SEO">
+                  <label for="SEO">SEO</label>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="country">Country: </label></td>
+                <td>
+                  <select name="country" id="country">
+                    <option value="USA">USA</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="message">Message: </label></td>
+                <td><textarea name="message" id="message"></textarea></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="2">
+                  <button type="submit">Send</button>
+                  <button type="reset">Clear</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </fieldset>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <p>Last Updated: August 13, 2025</p>
+        <p><i>Created by John Doe</i></p>
+        <p><i>Email: <a href="">john@exammple.com</a></i></p>
+        <p><i>Website: <a href="">example.com</a></i></p>
+        <p>@ 2025 John Doe. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
