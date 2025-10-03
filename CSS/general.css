@@ -130,7 +130,7 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1200px) {
+@media screen and (min-width: 0px) and (max-width: 1325px) {
   .nav_bar{
     display: none;
   }
@@ -154,6 +154,42 @@ header {
 .social_media>i:hover {
   color: #34b7a7;
 }
+
+/* second-nav */
+.second-nav-container {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  background-color: white;
+  width: 90ww;
+  height: 90vh;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 75px;
+  bottom: 20px;
+  display: none;
+}
+.bi-x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #444444;
+  cursor: pointer;
+}
+
+.second-nav {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 18px 22px;
+  text-align: left;
+  display: block;
+  width: 200px;
+}
+.second-nav:hover {
+  transition: 0.3s;
+  color: #34b7a7;
+}
+
 
 
 /* footer */
