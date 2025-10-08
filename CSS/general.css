@@ -27,6 +27,8 @@ body {
 }
 
 * {
+  transition: ease-in-out 1s;
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
@@ -150,6 +152,10 @@ header {
   margin-right: 5px;
   cursor: pointer;
   transition: 0.3s;
+}
+.social_media>.bi-list {
+  font-size: 28px;
+  vertical-align: middle;
 }
 .social_media>i:hover {
   color: #34b7a7;
