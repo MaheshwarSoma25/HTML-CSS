@@ -333,11 +333,12 @@ span, .val {
 }
 .about-person {
   width: auto;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 111px;
   margin-left: 111px;
   margin-bottom: 15px;
   text-align: center;
+  text-align: justify;
   font-style: italic;
   color: #444444;
   padding-bottom: 5px;
