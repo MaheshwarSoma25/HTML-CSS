@@ -11,6 +11,9 @@
 .main-heading-container>h1, .main-heading-container>p {
   margin: 0px;
 }
+.main-heading-container>p {
+  font-size: 15px;
+}
 .about {
   padding-top: 80px;
 }
@@ -307,7 +310,9 @@ span, .val {
   text-align: center;
 }
 
-
+/* .person {
+  width: auto;
+} */
 .person>img {
   width: 112px;
   border-radius: 56px;
@@ -334,8 +339,8 @@ span, .val {
 .about-person {
   width: auto;
   font-size: 14px;
-  margin-right: 111px;
-  margin-left: 111px;
+  /* margin-right: 111px;
+  margin-left: 111px; */
   margin-bottom: 15px;
   text-align: center;
   text-align: justify;
@@ -356,12 +361,12 @@ span, .val {
 }
 @media screen and (min-width: 990px) and (max-width: 1200px) {
   .members-container {
-    width: 936px;
+    width: 750px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .members-container {
-    width: 936px;
+    width: 750px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
