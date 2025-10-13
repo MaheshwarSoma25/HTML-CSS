@@ -29,7 +29,7 @@
 }
 
 .profile-img {
-  width: 27rem; 
+  width: 440px; 
   height: auto;
   padding-left: 12px;
   padding-right: 12px;
@@ -41,10 +41,15 @@
 
 .details {
   text-align: left;
-  width: 56rem;
+  width: 57rem;
   padding-left: 12px;
   padding-right: 12px;
   margin-top: 8px;
+}
+.biodata {
+  display: flex;
+  flex-direction: row;
+  gap: 14rem;
 }
 
 
@@ -55,13 +60,12 @@ ul {
 }
 li {
   margin-bottom: 1.2rem;
-  margin-top: 1.2rem;
 }
 .bi {
   color: #34b7a7;
 }
 
-@media screen and (min-width: 1272px) {
+@media screen and (max-width: 1272px) {
   .profile-img {
     max-width: 380px;
   }
@@ -93,16 +97,20 @@ li {
     max-width: 320px;
   }
   .details {
-    max-width: 640px;
+    max-width: 616px;
   }
   .biodata {
     display: flex;
     flex-direction: row;
+    gap: 7rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .profile-img {
-    width: 600px;
+    max-width: 700px;
+  }
+  .profile-img>img {
+    width: 100%;
   }
   .details {
     width: 696px;
@@ -110,6 +118,7 @@ li {
   .biodata {
     flex-direction: column;
     padding: 0px;
+    gap: 0px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {

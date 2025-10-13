@@ -18,6 +18,10 @@ body {
   padding-bottom: 60px;
   padding-top: 80px;
 }
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
 
 .underline {
  border: 2px solid #34b7a7;
