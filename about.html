@@ -232,7 +232,7 @@
   </section>
 
   <!-- section-4 -->
-  <section class="testimonials section">
+  <section id="testimonials" class="testimonials section">
     <div class="main-heading-container">
       <h1>Testimonials</h1>
       <div class="underline"></div>
@@ -240,11 +240,10 @@
     </div>
 
     <!-- swiper -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
+      <div class="testimonials-slider">
         
         <!-- slide-1 -->
-        <div class="swiper-slide">
+        <div class="testimonial-item active">
           <div class="members-container">
             <div class="person">
               <img src="https://themewagon.github.io/Kelly/assets/img/testimonials/testimonials-1.jpg" alt="">
@@ -261,7 +260,7 @@
           </div>
         </div>
         <!-- slide-2 -->
-        <!-- <div class="swiper-slide">
+        <div class="testimonial-item active">
           <div class="members-container">
             <div class="person">
               <img src="https://themewagon.github.io/Kelly/assets/img/testimonials/testimonials-2.jpg" alt="">
@@ -278,7 +277,7 @@
           </div>
         </div>
         
-        <div class="swiper-slide">
+        <div class="testimonial-item active">
           <div class="members-container">
             <div class="person">
               <img src="https://themewagon.github.io/Kelly/assets/img/testimonials/testimonials-3.jpg" alt="">
@@ -295,7 +294,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="testimonial-item active">
           <div class="members-container">
             <div class="person">
               <img src="https://themewagon.github.io/Kelly/assets/img/testimonials/testimonials-4.jpg" alt="">
@@ -312,7 +311,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="testimonial-item active">
           <div class="members-container">
             <div class="person">
               <img src="https://themewagon.github.io/Kelly/assets/img/testimonials/testimonials-5.jpg" alt="">
@@ -327,9 +326,16 @@
               </span>
             </div>
           </div>
-        </div> -->
+        </div>
 
       </div>
+
+    <div class="testimonial-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
 
   </section>
@@ -350,5 +356,44 @@
     </div>
   </footer>
   <script src="app.js"></script>
+  <script>
+    let tIndex = 0;
+    const tSlides = document.getElementsByClassName("testimonial-item");
+    const tDots = document.getElementsByClassName("dot");
+
+    function showTestimonial(n) {
+      for (let i = 0; i < tSlides.length; i++) {
+        tSlides[i].classList.remove("active");
+      }
+      for (let i = 0; i < tDots.length; i++) {
+        tDots[i].classList.remove("active");
+      }
+
+      tSlides[n].classList.add("active");
+      if (tDots[n]) tDots[n].classList.add("active");
+    }
+
+    function autoTestimonials() {
+      tIndex++;
+      if (tIndex >= tSlides.length) tIndex = 0;
+      showTestimonial(tIndex);
+      setTimeout(autoTestimonials, 3000); // 3 seconds
+    }
+
+    // dot click (optional)
+    for (let i = 0; i < tDots.length; i++) {
+      tDots[i].addEventListener("click", function () {
+        tIndex = i;
+        showTestimonial(tIndex);
+      });
+    }
+
+    // start
+    if (tSlides.length > 0) {
+      showTestimonial(0);
+      setTimeout(autoTestimonials, 3000);
+    }
+  </script>
+
 </body>
 </html>

@@ -17,6 +17,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: zoomOut 0.8s ease-out forwards;
+}
+
+/* Zoom-out animation */
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .middle_content>h1,.middle_content>p {
   margin: 0px;
